@@ -13,6 +13,20 @@
 <h5>hopefully something fun</h5>
 <h6>no?</h6>
   <body>
+    <style>
+  .menu-button {
+    position: absolute;
+    border: 2px solid lime; /* THIS IS THE 'GHOST' BORDER so you can see the button */
+    transition: 0.3s;
+    background: rgba(0, 255, 0, 0.1); /* Slight tint so you can find it */
+  }
+
+  .menu-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: invert(100%); /* The 'ribo.zone' color flip effect */
+    cursor: crosshair;
+  }
+</style>
 <img src="kolokithaki.webp" alt="kolokithaki">
 <div style="position: relative; display: inline-block;">
   <img src="https://github.com/irini-online/basket/blob/main/oma%20table%20copy.png?raw=true" style="width: 100%; max-width: 600px; display: block;">
