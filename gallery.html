@@ -1,37 +1,66 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <style>
+    body {
+      background-color: white; /* Or black, depending on your vibe */
+      font-family: "Courier New", monospace;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* THE MAGIC: This container makes images sit in a row */
+    .gallery-container {
+      display: flex;       /* Flexbox is the best way to align things */
+      flex-wrap: wrap;     /* If they run out of space, they start a new row */
+      justify-content: center; /* Centers the whole row */
+      gap: 15px;           /* Puts a nice gap between the photos */
+    }
+
+    /* THE PHOTOS: Set a specific size here */
+    .gallery-container img {
+      width: 200px;        /* Change this number to make them bigger or smaller */
+      height: 150px;       /* Keeps them all the same height for a clean look */
+      object-fit: cover;   /* Crops the images slightly so they don't look squished */
+      transition: 0.3s;
+      cursor: crosshair;
+    }
+
+    /* THE INVERT: Still here for your mouse-over effect */
+    .gallery-container img:hover {
+      filter: invert(1);
+    }
+  </style>
+</head>
+
 <body>
 
-<h2>Athens: No 1. going backwards</h2>
+  <h2>Athens: No 1. going backwards</h2>
+  <p>scroll to walk backwards</p>
 
-<p> scroll to walk backwards </p>
+  <div class="gallery-container">
+    <img src="taverna.jpg">
+    <img src="tobazis.jpg">
+    <img src="pezodromio.jpg">
+    <img src="pink.jpg">
+    <img src="frodistirio.jpg">
+    <img src="balkonato.jpg">
+    <img src="guest.jpg">
+    <img src="periptero.jpg">
+    <img src="playground on garage.jpg">
+    <img src="paradise.jpg">
+    <img src="strefi.jpg">
+    <img src="pale.jpg">
+    <img src="karaflas.jpg">
+    <img src="sirtaraki.jpg">
+    <img src="mixani.jpg">
+    <img src="simviosi.jpg">
+    <img src="pagaki marmarino.jpg">
+    <img src="brat.jpg">
+    <img src="tapetsaria.jpg">
+    <img src="psaradiko.jpg">
+    <img src="oikodomi.jpg">
+  </div>
 
-<img src="taverna.jpg">
-<img src="tobazis.jpg">
-<img src="pezodromio.jpg">
-<img src="pink.jpg">
-<img src="frodistirio.jpg">
-<img src="balkonato.jpg">
-<img src="guest.jpg">
-<img src="periptero.jpg">
-<img src="playground on garage.jpg">
-<img src="paradise.jpg">
-<img src="strefi.jpg">
-<img src="pale.jpg">
-<img src="karaflas.jpg">
-<img src="sirtaraki.jpg">
-<img src="mixani.jpg">
-<img src="simviosi.jpg">
-<img src="pagaki marmarino.jpg">
-<img src="brat.jpg">
-<img src="tapetsaria.jpg">
-<img src="psaradiko.jpg">
-<img src="oikodomi.jpg">
-
-
-
-  
-
-  
 </body>
 </html>
