@@ -14,23 +14,56 @@
 <h5>hopefully something fun</h5>
 <h6>no?</h6>
     <style>
+  body {
+    /* 1. Reset margins so there's no weird white gap at the edges */
+    margin: 0;
+    padding: 0;
+
+    /* 2. Make the body a 'Flexbox' container */
+    display: flex;
+    
+    /* 3. Stack things vertically (h1, then h2, then your image) */
+    flex-direction: column;
+    
+    /* 4. Center everything horizontally */
+    align-items: center;
+    
+    /* 5. Center everything vertically (optional) */
+    justify-content: center;
+    
+    /* 6. Tell the body to be at least as tall as the screen */
+    min-height: 100vh;
+
+    background-color: #000; /* Staying with that ribo-dark look */
+    color: #fff;
+    font-family: "Courier New", monospace;
+    text-align: center; /* Centers your text inside the headers */
+  }
+
+  .photo-container {
+    position: relative; 
+    display: inline-block;
+    margin-top: 20px; /* Gives some space between your text and the image */
+  }
+
   .menu-button {
     position: absolute;
-    border: 2px solid lime; /* THIS IS THE 'GHOST' BORDER so you can see the button */
+    border: 1px dashed lime;
     transition: 0.3s;
-    background: rgba(0, 255, 0, 0.1); /* Slight tint so you can find it */
   }
 
   .menu-button:hover {
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: invert(100%); /* The 'ribo.zone' color flip effect */
-    cursor: crosshair;
+    backdrop-filter: invert(100%);
   }
 </style>
-<div style="position: relative; display: inline-block;">
-  <img src="https://github.com/irini-online/basket/blob/main/oma%20table%20copy.png?raw=true" style="width: 100%; max-width: 600px; display: block;">
-  <a href="about.html" class="menu-button" style="top: 20%; left: 10%; width: 100px; height: 50px;"></a>
-  <a href="gallery.html" class="menu-button" style="top: 50%; left: 60%; width: 80px; height: 80px;"></a>
-</div>
+  <div class="photo-container">
+    <img src="https://github.com/irini-online/basket/blob/main/oma%20table%20copy.png?raw=true" 
+         style="width: 100%; max-width: 600px; display: block;">
+    
+    <a href="about.html" class="menu-button" style="top: 20%; left: 10%; width: 100px; height: 50px;"></a>
+    <a href="gallery.html" class="menu-button" style="top: 50%; left: 60%; width: 80px; height: 80px;"></a>
+  </div>
+
+</body>
   </body>
 </html>
