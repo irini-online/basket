@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
-  <style>
-  h1, h2, h3, h4, h5, h6 {margin: 5px 0; /
-                         }
-  .my-photo { 
-    width: 50%; 
-    height: auto; 
-    transition: 0.3s; 
-    display: block; 
-    margin: 20px auto;
-  }
-  .my-photo:hover { 
-    filter: invert(1) !important;
-  }
-  </style>
-  
   <meta charset="utf-8" />
-    <title>irini online</title>
+  <title>irini online</title>
   <meta name="viewport" content="width=device-width" />
-  
   <link rel="icon" type="image/webp" href="kolokithaki.webp">
+
+  <style>
+    /* Basic Typography */
+    h1, h2, h3, h4, h5, h6 { 
+      margin: 5px 0; 
+    }
+
+    /* Container to keep buttons in a horizontal row */
+    .button-container {
+      display: flex;
+      justify-content: center; /* Centers the group of buttons */
+      gap: 20px;               /* Space between each button */
+      margin: 40px auto;       /* Space above and below the row */
+    }
+
+    /* Styling for the button images */
+    .my-photo { 
+      width: 150px; 
+      height: auto; 
+      transition: 0.3s; 
+      display: inline-block;
+    }
+
+    /* Interactive hover effect: colors flip when mouse touches them */
+    .my-photo:hover { 
+      filter: invert(1) !important;
+      cursor: pointer; /* Ensures the standard "hand" icon appears */
+    }
+  </style>
 </head>
 
-  
 <body>
-  <h1>hello friends</h1>
-  <h2>καλησπέρα</h2>
-  <h3>i am trying to figure this out</h3>
-  <h4>this semi-lovely sunday will be dedicated to the configuration of this little space</h4>
-  <h5>hopefully something fun</h5>
-  <h6>no?</h6>
+  <h1>irini.online</h1>
+  <h2>this is it. forever in progress.</h2>
+  <h3>a blog!</h3>
+  <h4>hopefully fun</h4>
+  <h5>no?</h5>
 
- <a href="gallery.html">
-    <img src="oma table copy.png" 
-         alt="Enter Gallery" 
-         class="my-photo">
-  </a>
+  <div class="button-container">
+    <a href="gallery.html">
+      <img src="oma table copy.png" alt="Enter Gallery" class="my-photo">
+    </a>
+
+    <a href="about.html">
+      <img src="about.png" alt="About Me" class="my-photo">
+    </a>
+  </div>
+
 </body>
 </html>

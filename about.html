@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - My Blog</title>
+    <style>
+        .cursor-blog {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            /* Replace 'blog-photo.png' with your first small image */
+            cursor: url('kolokithaki.png'), auto;
+        }
+
+        .cursor-content {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            /* Replace 'content-photo.png' with your second small image */
+            cursor: url('oma table copy small.png'), auto;
+        }
+
+        .main-wrapper {
+            display: flex;       
+            gap: 0px;           
+            max-width: 900px;   /* Increased slightly for side-by-side comfort */
+            margin: 0;      /* Centers the whole layout */
+        }
+
+        .text-box {
+            flex: 1;             
+            text-align: left;
+        }
+
+        /* This is the class for each individual paragraph block */
+        .info-block {
+            padding: 15px;
+            transition: 0.5s;
+            margin-bottom: 5px;
+        }
+
+        .info-block:hover {
+            background-color: rgb(255, 105, 235); 
+            color: rgb(253, 244, 2);
+            cursor: crosshair;        
+        }
+
+        .back-button {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: rgb(255, 105, 235);
+            text-decoration: none;
+            font-size: 14px;
+            padding: 10px 20px;
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: rgb(255, 105, 235);
+            color: rgb(253, 244, 2); 
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-button">← back to table</a>
+
+    <div class="main-wrapper">
+        
+        <div class="text-box">
+            <h1 class="cursor-blog">about this blog</h1>
+            <div class="info-block">
+                <p>I really do not know why. But I am really addicted to instagram and especially to posting things nobody cares about. 
+                So here I will still be able to share in a way things that cross my mind, but I am not forcing it to anyones feed. 
+                Of course, I will be happy if my content reaches some screens, but it really does not matter if it does not. 
+                And I find this thought amazing. AND MAYBE I LEARN TO BE INDEPENDENTLY ONLINE!</p>
+            </div>
+        </div>
+
+        <div class="text-box">
+            <h1 class="cursor-content">about the content</h1>
+            
+            <div class="info-block">
+                <h3>about the lifestyle</h3>
+                <p>I am still trying to figure this out. I initially wanted my own lifestyle column, but I am not sure anymore. Maybe it will still naturally occur. 
+                I want to yap, review, review content and experiences, places and routes.</p>
+            </div>
+
+            <div class="info-block">
+                <h3>about the updates</h3>
+                <p>It will be super cool of me, or maybe for me to document the process in a little "updates of the website" page. 
+                This will hopefully help revisiting ideas, documenting coding or any knowledge really and sharing it.</p>
+            </div>
+
+            <div class="info-block">
+                <h3>about the nerds</h3>
+                <p>There will be one wikipedia or just nerdy article/text per week *probably every sunday* or a little random topic I would share thoughts on?
+                Not sure. Maybe boring. Maybe educational. Maybe amazing.</p>
+            </div>
+
+            <div class="info-block">
+                <h3>about the photo dumps</h3>
+                <p>This is my big love. My passion. The thing that makes me smile when I look through my phone. 
+                Yes. Shallow. Making photo dumps. I love it. 
+                I love the compositions that come out of ugly angles, the putting the photos with eachother, 
+                mixing them based on different factors, accompanying them with random songs, sounds, thoughts.</p>
+            </div>
+        </div>
+
+    </div> 
+</body>
+</html>
